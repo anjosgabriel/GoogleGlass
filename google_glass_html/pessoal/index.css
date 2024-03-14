@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Usar .html ou :root vai ser a mesma coisa*/
+:root {
+    --text-color: white;
+    --bg-url: url('bg-mobile.jpg');
+    --stroke-color: rgba(255, 255, 255, .5);
+    --surface-color: rgba(255, 255, 255, .1);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --switch-bg-url: url(moon-stars.svg);
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url('bg-mobile-light.jpg');
+    --stroke-color: rgba(0, 0, 0, .5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --switch-bg-url: url(sun.svg);
+}
+
+
+body {
+    /*CADA UM: 
+    background-image: url('bg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    */
+
+    /*JUNTANDO TODOS EM APENAS UM: */
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+
+#container {
+    width: 100%;
+    max-width: 588px;
+    /*border: 1px solid red;*/
+    /*Para centralizar, vai usar a propriedade MARGIN*/
+    margin: auto;
+    margin-top: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    /*auto é a mesma coisa que 0*/
+    margin-bottom: 0;
+    padding: 0 24px;
+}
+
+/*Profile*/
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/*Switch*/
+#switch {
+    position: relative;
+    width: 64px;
+    /*Para centralizar: */
+    margin: 4px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    /*Z-index: Serve para subir ou descer um andar na posição. Essa propriedade só é liberada quando se usa position: absolute; além dela, também é 
+    liberada a propriedade como a right e top*/
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: slide-out 0.2s;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
+.light #switch button {
+    animation: slide-in 0.4s forwards;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+#lista h1 {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 21px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*Links*/
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /*Gap serve para dar espaço entre os elementos*/
+    gap: 16px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+/*pseudo-selector*/
+ul li a:hover {
+    background: var(--surface-color-hover);
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-left: 10px;
+}
+
+.social-links:hover {
+    color: black;
+}
+
+#rodape {
+    border-top: 30px;
+}
+
+#rodape h3 {
+    font-size: 15px;
+}
+
+#rodape h3 a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Media queries*/
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./bg-desktop-light.jpg);
+    }
+}
+
+/*animation*/
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
+}

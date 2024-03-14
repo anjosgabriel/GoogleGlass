@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Alunos</title>
+    <link rel="icon" href="teste2.png" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">Voltar a Home</a>
+    </div>
+
+    <div id="foto">
+        <img src="teste2.png" alt="osastech">
+    </div>
+   
+    
+    <div id="formulario">
+    <h1 id="titulo-form">Cadastre-se</h1>
+    
+    <form action="#" method="POST">
+        <h2 id="dados">Dados Pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="(Ex:Raul)" required><br>
+
+        <label for="nome">Sobrenome:</label>
+        <input type="text" id="nome" name="nome" placeholder="(Ex:Scalet)" required><br>
+
+
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="(dd/mm/aaaa)" required><br>
+
+        <h2 id="contato">Gênero:</h2>
+        <label for="genero_masculino">Masculino</label>
+        <input type="radio" id="genero_masculino" name="genero" value="Masculino" required>
+        <label for="genero_feminino">Feminino</label>
+        <input type="radio" id="genero_feminino" name="genero" value="Feminino" required>
+        <label for="genero_binario">Outro</label>
+        <input type="radio" id="genero_outro" name="genero" value="outro" required>
+        <label for="genero_feminino">Prefiro n&atilde;o informar</label>
+        <input type="radio" id="genero_nao" name="genero" value="nao" required>
+        
+
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input type="text" id="nacionalidade" name="nacionalidade" placeholder="(Ex:Brasileiro)"><br>
+
+        <label for="documento_identificacao">Documento de identificação:</label>
+        <input type="file" id="documento_identificacao" name="documento_identificacao" accept=".pdf, .jpg, .png" required><br>
+
+        <h2 id="contato">Informações de Contato</h2>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="(Rua André Thomaz, 661 Campesina - Osasco, SP)" required><br>
+
+        <label for="telefone">Número de telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11)4002-8922" required><br>
+
+        <label for="email">Endereço de e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="(Ex:raul.reis@osastech.com)" required><br>
+
+        <h2 id="curso">Curso</h2>
+        <label for="nome_curso">Curso desejado:</label>
+        <select id="nome_curso" name="nome_curso" required>
+            <option value="#"></option>
+            <option value="ta">T&eacute;cnico em Admnistraç&atilde;o</option>
+            <option value="tds">T&eacute;cnico em Desenvolvimento de Sistemas</option>
+        </select><br>
+
+        <label for="modalidade_curso">Modalidade do curso:</label>
+        <select id="modalidade_curso" name="modalidade_curso" required>
+            <option value="#"></option>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option>
+            <option value="online">H&iacute;brido</option>
+        </select><br>
+       
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Especificaç&otilde;es - Google Glass</title>
+    <link rel="icon" href="favicon.webp">
+    <link rel="stylesheet" type="text/css" href="css/estilo-glass.css">
+    <link rel="stylesheet" type="text/css" href="css/specs-glass.css">
+</head>
+
+<script src="funcoes-glass.js"></script>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revoluç&atilde;o do Google est&aacute; chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="glass-foto.png" style="height: 120px;">
+
+            <nav id="menu">
+
+                <!-- <h1>Menu Principal</h1>  -->
+
+                <ul type="square">
+                    <li onmouseover="mudaFoto('casa.jpg')" onmouseout="mudaFoto('glass-foto.png')"><a
+                            href="index-glass.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('lupa.jpg')" onmouseout="mudaFoto('glass-foto.png')"><a
+                            href="specs-glass.html">Especificaç&otilde;es</a></li>
+                    <li onmouseover="mudaFoto('camera.jpg')" onmouseout="mudaFoto('glass-foto.png')"><a
+                            href="fotos-glass.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('album.jpg')" onmouseout="mudaFoto('glass-foto.png')"><a
+                            href="multi-glass.html">Multim&iacute;dia</a></li>
+                    <li onmouseover="mudaFoto('falecons.png')" onmouseout="mudaFoto('glass-foto.png')"><a
+                            href="form-glass.html">Fale
+                            Conosco</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Especificaç&otilde;es</h3>
+                        <h1 id="titulo-red">Raio-X no Google Glass</h1>
+                        <h2>Por Gabriel dos Anjos</h2>
+                        <h3 class="direita">Atualiazado 31/Março/2023</h3>
+
+                    </hgroup>
+                </header>
+
+                <p>Clique em qualquer &aacute;rea destacada da imagem para ter mais informaç&otilde;es sobre os recursos
+                    do Google
+                    Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informaç&otilde;es.
+                </p>
+
+                <section id="conteudo">
+                    <img src="glass-esquema-marcado.jpg" usemap="#meumapa">
+                    <map name="meumapa">
+                        <area shape="rect" coords="179,202,270,260" href="info-glass.html#tela" target="janela">
+                        <area shape="circle" coords="158,243,12" href="info-glass.html#camera" target="janela">
+                        <area shape="circle" coords="73,52,12" href="info-glass.html#gadgets" target="janela">
+                        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="info-glass.html#sensores"
+                            target="janela">
+                    </map>
+                    <iframe src="info-glass.html" name="janela" id="frame-spec"></iframe>
+                </section>
+
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2023 - by Gabriel dos Anjos</p>
+            <p><a href="https://www.linkedin.com/in/gabriel-dos-anjos-a913401a5/" target="_blank">
+
+                    <picture>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Meu Linkedin"
+                            width="45">
+                    </picture>
+                </a></p>
+
+        </footer>
+
+</body>
+
+</html>

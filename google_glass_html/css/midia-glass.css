@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div#tv {
+    width: 960px;
+    height: 717px;
+    margin: auto;
+    background: url("../tv.jpg") no-repeat;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 62px;
+    width: 398px;
+}

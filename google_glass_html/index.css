@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Menu */
+
+
+.navbar {
+    background-color: rgba(188, 38, 73, 1);;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.logo img {
+    height: 40px;
+}
+
+.titulo{
+    margin-left: 15px;
+}
+
+.titulo h1{
+    color: black;
+}
+
+/* Estilos para a barra de pesquisa */
+
+.find {
+    margin-right: 20px;
+    
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    display: none;
+  }
+  
+  input[type="search"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #999;
+  }
+  
+  input[type="search"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+/* Estilos para os links da navegação */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 95px;
+}
+
+.nav-links a {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Estilos para a etiqueta 'Cursos' */
+.nav-links label {
+    margin-left: 15px;
+    color: #fff;
+}
+
+/* Estilos para o formulário de seleção */
+.nav-links select {
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Estilos para o formulário de seleção quando em foco */
+.nav-links select:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 5px white;
+}
+  
+
+/* Corpo Site */
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para a seção de apresentação */
+#apresentacao {
+    text-align: center;
+    margin: 5px 10;
+    margin-left: 495px;
+    margin-top: 100px;
+    margin-bottom: -79px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#apresentacao h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#apresentacao p{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    color:#5d5c49;
+}
+
+
+#imagem-apresentacao {
+    float: center;
+    margin-right: 20px;
+}
+
+#imagem-apresentacao img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para a seção de destaque */
+#destaque {
+    clear: both;
+    text-align: center;
+    margin-left: 495px;
+    margin-top: -290px;
+    margin-bottom: -49px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#destaque h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+#destaque ul {
+    list-style: none;
+    padding: 0;
+}
+
+#destaque li {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    color: #5d5c49;
+}
+
+/* Estilo para a seção de inscrição */
+div:last-child {
+    text-align: center;
+    margin-left: 495px;
+    margin-top: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+div:last-child h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
+div:last-child a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgba(188, 38, 73, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+div:last-child a:hover {
+    background-color: rgba(188, 38, 73, 0.8);
+}
+
+
+
+/*Rodapé*/
+
+

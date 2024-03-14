@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    padding: 100px;
+  }
+
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(188, 38, 73, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+.container a:hover {
+    background-color: rgba(188, 38, 73, 0.8);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#foto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#foto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#formulario {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-form {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dados, #contato, #curso {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: rgba(188, 38, 73, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(188, 38, 73, 0.8)
+}
+
+#fazer-cadastro{
+    margin-left: 300px;
+   margin-top: -30px;
+}
+
+/* Estilizar os campos obrigatórios */
+input:required {
+    border-color: #e74c3c;
+}
+
+input:required:focus {
+    border-color: #c0392b;
+}
+
+
+
+
